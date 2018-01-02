@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+* {
+    margin:0px;
+}
+
+header{
+    width: 100%;
+    height: 949px;
+  /*background-color: #2ecc71; */
+  background: url('../codigo2.jpg') no-repeat;
+  background-size: 100% 97%;
+  background-attachment: fixed;
+}
+.nome-centro{
+    position: absolute;
+    text-align: center;
+    width: 587px;
+    left: 33%;
+    padding: 40px 50px 61px;
+    top: 32%;
+    font-family: 'Bungee', cursive;
+    background-color: rgba(255,255,255,1);
+    border: 2px solid black;
+    
+}
+.nome-centro h1{
+    text-transform: uppercase;
+}
+img{
+    height: 50px;
+    padding: 0;
+}
+.menu ul{
+    list-style:none;
+    height: 50px;
+    background:  red;
+    text-align: center;
+}
+.menu ul li{
+    position: relative;
+    top: 10px;
+    display: inline;
+}
