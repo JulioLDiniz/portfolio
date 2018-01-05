@@ -8,12 +8,15 @@
     <body>
         
         <header>
+            <div class="slides">
+                
+            </div>
            <div class="nome-centro">
                <h1>Júlio Liarte Diniz</h1>
                <h2>Desenvolvedor Web</h2>
-               <img src="g.gif"/>
+               <img src="g.gif" />
            </div>
-           <nav class="menu">
+           <nav class="menu" id="menuHeader">
                <ul>
                    <li>Início</li>
                    <li>Sobre</li>
@@ -28,5 +31,22 @@
         <footer>
              hi, i'am a footer!
         </footer>
-    </body>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+        
+    
+    <script type="text/javascript">
+		$(function(){   
+			var nav = $('#menuHeader');   
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 150) { 
+				    console.log('esta em 150');
+					nav.addClass("menu-fixo"); 
+				} else { 
+					nav.removeClass("menu-fixo"); 
+				} 
+			});  
+		});
+	</script>
+	</body>
 </html>
